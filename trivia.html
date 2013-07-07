@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+
+body {
+		background-color: gray;
+		font-family: Garamond, Arial, sans-serif;
+		}
+
+#wrapper {
+			width: 700px;
+			margin: 25px auto 50px auto;
+			border: 2px black solid;
+			padding: 23px;
+			background-color: white;
+			overflow:hidden;
+			}
+
+h1 {
+	font-family: Garamond, Arial, sans-serif;
+	font-size: 36px;
+	text-align: center;
+	}
+			
+			
+h2 {
+	font-family: Garamond, Arial, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	}
+
+#questionbox {
+			margin-bottom: 25px;
+			}
+
+#answerbox {
+				width: 300px;
+				margin: 0 auto 0 auto;
+				font-size:20px;
+				}
+
+#answerarea {
+			width:150px;
+}
+
+#letsplay {
+				width: 100px;
+				margin: 0 auto 25px auto;
+}
+
+#displaystext p {
+				margin:50px 0 0px 22px;
+				width:200px;
+				float:left;
+				text-align:center;
+}
+
+#nofloat {
+	float:none;
+}
+
+#answersubmit {
+	width:200px;
+	height: 40px;
+	border: black 2px solid;
+	background-color:gray;
+	color:white;
+	text-align:center;
+	margin: 20px auto 15px 	auto;
+	font-size: 20px;
+	line-height: 40px;
+	cursor:pointer;
+
+}
+
+.bottombuttons {
+				margin: 5px 0 20px 22px;
+				width:200px;
+				height: 150px;
+				float:left;
+				border: 2px black solid;
+				font-size:92px;
+				font-weight:bold;
+				line-height:150px;
+				text-align:center;
+}
+
+	
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="welcomebox">
+	<h1 id="welcometext">Welcome!</h1>
+</div>
+
+<div id="questionbox">
+	<h2>This is a trivia game. The object of this game is to get three correct answers. You are allowed only one incorrect answer. <br /><br />Are you ready to begin?</h2>
+</div>
+
+<div id="letsplay">
+	<input type="submit" name="letsplaybutton" value="Let's Play!" id="readybutton" />
+</div>
+
+<div id="answerbox">
+	<form>
+		Answer: <input type="text" name="answerbox" id="answerarea" />
+		<div id="answersubmit">Submit answer!</div>
+	</form>
+</div>
+
+<div id="displaystext">
+		<p>Correct answers:</p>
+		<p id="timeremainingtext">Time remaining:</p>
+		<p id="nofloat">Lives left:</p>
+</div>
+
+<div id="displays">
+	<div id="correct" class="bottombuttons"><span id="correctanswers">0</span> / 3
+	</div>
+</div>
+<div id="timer" class="bottombuttons">30
+</div>
+<div id="livesleft" class="bottombuttons">1
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
